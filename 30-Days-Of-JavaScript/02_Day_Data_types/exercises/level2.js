@@ -58,6 +58,3 @@ let sub = "because";
 let st = s1.indexOf(sub);
 let fi = s1.lastIndexOf(sub);
 console.log(s1.substring(0, st - 1) + s1.substring(fi + sub.length));
-
-
- 

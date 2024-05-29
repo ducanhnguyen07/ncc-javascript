@@ -103,9 +103,13 @@ if (inputSearch) {
       displayCountries(country);
     } else {
       const country = countries.filter((country) => country.match(regex));
-      totalSearchLbl.innerHTML = `Country containing ${searchValue} are ${country.length}`;
+      if(searchValue === "") {
+        totalSearchLbl.innerHTML = "";
+      } else {
+        totalSearchLbl.innerHTML = `Country containing ${searchValue} are ${country.length}`;
+      }
       displayCountries(country);
-    } 
+    }
   });
 }
 

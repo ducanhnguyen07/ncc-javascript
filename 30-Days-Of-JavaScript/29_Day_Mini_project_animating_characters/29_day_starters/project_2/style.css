@@ -1,0 +1,13 @@
+div {
+  margin-top: 2%;
+  margin-left: 10%;
+  height: 500px;
+  width: 700px;
+  font-size: 70px;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out; 
+
+}
+
+div span {
+  transition: color 1s ease-in-out;
+}

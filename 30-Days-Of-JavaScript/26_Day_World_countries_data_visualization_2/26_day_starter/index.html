@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>30DaysOfJavaScript:11 Day</title>
 
-<head>
-    <title>30DaysOfJavaScript:11 Day </title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
 
-<body>
-    <h1>30DaysOfJavaScript:11 Day</h1>
-    <h2>Destructuring and Spread</h2>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+  </head>
+
+  <body>
+    <div class="header-search">
+      <h1>WORLD COUNTRY LIST</h1>
+      <h4 class="total-countries"></h4>
+      <p class="regex-search"></p>
+      <p class="total-search"></p>
+
+      <button class="btn btn-primary start-word">STARTING WORD</button>
+      <button class="btn btn-primary any-word">SEARCH WITH ANY WORD</button>
+      <button class="btn btn-primary sort-az"><i class="fa-solid fa-arrow-down-a-z"></i></button>
+
+      <div class="manage-search">
+        <input type="text" class="input-search" placeholder="Search country...">
+        <button class="btn btn-light search-click"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+
+    <div class="countries-list">
+      
+    </div>
 
     <script src="./data/countries.js"></script>
     <script src="./scripts/main.js"></script>
 
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

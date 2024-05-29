@@ -41,8 +41,8 @@ const asabenehChallenges2020 = {
     'D3.js'
   ],
   author: {
-    firstName: 'Asabeneh',
-    lastName: 'Yetayeh',
+    firstName: 'Nguyen',
+    lastName: 'Duc Anh',
     titles: [
       ['🌱', 'Educator'],
       ['💻', 'Programmer'],

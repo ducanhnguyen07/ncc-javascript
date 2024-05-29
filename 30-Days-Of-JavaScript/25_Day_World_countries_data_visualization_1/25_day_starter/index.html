@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>World Countries Data</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
     <header id="countries">
-        <h2>World Countries Data</h2>
-        <p class="subtitle"></p>
-        <p class="feedback"></p>
+      <h2 id="world-title">World Countries Data</h2>
+      <p class="subtitle"></p>
     </header>
-    <main>
 
-        <div class="wrapper">
-            <div class="graph-buttons">
-                <button class="population">Population</button>
-                <button class="languages">Languages</button>
-            </div>
-            <h4 class="graph-title"></h4>
-            <div class="graphs">
-                <div class="graph-wrapper" id="stat"></div>
-            </div>
+    <main>
+      <div class="wrapper">
+        <div class="graph-buttons">
+          <button class="population btn btn-warning">POPULATION</button>
+          <button class="languages btn btn-warning">LANGUAGES</button>
+          <p class="feedback"></p>
         </div>
+        <h4 class="graph-title"></h4>
+        <div class="graphs">
+          <canvas class="graph-wrapper" id="stat"></canvas>
+        </div>
+      </div>
     </main>
 
     <script src="./data/countries_data.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./scripts/main.js"></script>
 
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  </body>
 </html>

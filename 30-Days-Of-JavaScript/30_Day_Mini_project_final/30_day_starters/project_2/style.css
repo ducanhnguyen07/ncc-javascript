@@ -1,0 +1,56 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.form {
+  padding-left: 25em;
+  text-align: center;
+  width: 37%;
+}
+
+.form-control{
+  margin: 0 auto;
+  text-align: start;
+}
+
+.form-control label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 0;
+  padding-top: 1em;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  height: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+}
+
+.form-control textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+}
+
+button {
+  width: 40%;
+  padding: 0.2em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: #FFA715;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}

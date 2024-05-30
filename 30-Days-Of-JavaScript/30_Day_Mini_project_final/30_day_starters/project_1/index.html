@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>30DaysOfJavaScript:30</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -22,103 +34,51 @@
       <div class="input-container">
         <input
           type="text"
-          placeholder="Search countries with name & languages"
+          placeholder="Search countries by name, city and languages"
         />
       </div>
+
       <div class="controls-container">
-        <button class="sort-by-name">NAME</button>
-        <button class="sort-by-capital">CAPITAL</button>
-        <button class="sort-by-population">POPULATION</button>
+        <button class="sort-by-name">
+          NAME&nbsp;&nbsp;<i class="fa-solid fa-up-long icon-name"></i>
+        </button>
+        <button class="sort-by-capital">
+          CAPITAL&nbsp;&nbsp;<i class="fa-solid fa-up-long icon-capital"></i>
+        </button>
+        <button class="sort-by-population">
+          POPULATION&nbsp;&nbsp;<i
+            class="fa-solid fa-up-long icon-population"
+          ></i>
+        </button>
       </div>
     </section>
 
     <section class="place-center">
-      <div class="countries-wrapper">
-        <div class="country-container">
-            <img src="https://flagcdn.com/al.svg" alt="albania" />
-            <p class="country-name">Albania</p>
-            <p class="country-capital">Capital: Tirana</p>
-            <p class="country-languages">Languages: english, tamil, marathi</p>
-            <p class="country-population">Population: 2432421</p>
-          </div>
-        <div class="country-container">
-            <img src="https://flagcdn.com/al.svg" alt="albania" />
-            <p class="country-name">Albania</p>
-            <p class="country-capital">Capital: Tirana</p>
-            <p class="country-languages">Languages: english, tamil, marathi</p>
-            <p class="country-population">Population: 2432421</p>
-          </div>
-        <div class="country-container">
-          <img src="https://flagcdn.com/al.svg" alt="albania" />
-          <p class="country-name">Albania</p>
-          <p class="country-capital">Capital: Tirana</p>
-          <p class="country-languages">Languages: english, tamil, marathi</p>
-          <p class="country-population">Population: 2432421</p>
-        </div>
-
-        <div class="country-container">
-          <img src="https://flagcdn.com/al.svg" alt="albania" />
-          <p class="country-name">Albania</p>
-          <p class="country-capital">Capital: Tirana</p>
-          <p class="country-languages">Languages: english, tamil, marathi</p>
-          <p class="country-population">Population: 2432421</p>
-        </div>
-
-        <div class="country-container">
-          <img src="https://flagcdn.com/al.svg" alt="albania" />
-          <p class="country-name">Albania</p>
-          <p class="country-capital">Capital: Tirana</p>
-          <p class="country-languages">Languages: english, tamil, marathi</p>
-          <p class="country-population">Population: 2432421</p>
-        </div>
-
-        <div class="country-container">
-          <img src="https://flagcdn.com/al.svg" alt="albania" />
-          <p class="country-name">Albania</p>
-          <p class="country-capital">Capital: Tirana</p>
-          <p class="country-languages">Languages: english, tamil, marathi</p>
-          <p class="country-population">Population: 2432421</p>
-        </div>
-
-        <div class="country-container">
-          <img src="https://flagcdn.com/al.svg" alt="albania" />
-          <p class="country-name">Albania</p>
-          <p class="country-capital">Capital: Tirana</p>
-          <p class="country-languages">Languages: english, tamil, marathi</p>
-          <p class="country-population">Population: 2432421</p>
-        </div>
-
-        <div class="country-container">
-          <img src="https://flagcdn.com/al.svg" alt="albania" />
-          <p class="country-name">Albania</p>
-          <p class="country-capital">Capital: Tirana</p>
-          <p class="country-languages">Languages: english, tamil, marathi</p>
-          <p class="country-population">Population: 2432421</p>
-        </div>
-
-        <div class="country-container">
-          <img src="https://flagcdn.com/al.svg" alt="albania" />
-          <p class="country-name">Albania</p>
-          <p class="country-capital">Capital: Tirana</p>
-          <p class="country-languages">Languages: english, tamil, marathi</p>
-          <p class="country-population">Population: 2432421</p>
-        </div>
-      </div>
+      <div class="countries-wrapper"></div>
     </section>
 
     <section class="place-center">
       <div class="input-container">
-        <button value="population">POPULATION</button>
-        <button value="languages">LANGUAGES</button>
+        <button value="population" class="population">POPULATION</button>
+        <button value="languages" class="languages">LANGUAGES</button>
       </div>
       <div class="wrapper">
         <div class="get-started">
-          <p>World Population</p>
+          <!-- <p></p> -->
+        </div>
+        <div class="graphs">
+          <canvas class="graph-wrapper" id="stat"></canvas>
         </div>
       </div>
     </section>
 
     <script src="./data/countries_data.js"></script>
     <script src="./scripts/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></script>
   </body>
 </html>
